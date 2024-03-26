@@ -7,6 +7,6 @@ import { ProjectsComponent } from '../../layout/projects/projects.component';
   standalone: true,
   imports: [HeroComponent, ProjectsComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  styleUrl: './home.component.scss'
 })
 export class HomePageComponent {}

@@ -8,7 +8,7 @@ import { MainNavbarComponent } from './layout/main-navbar/main-navbar.component'
   standalone: true,
   imports: [RouterOutlet, MainFooterComponent, MainNavbarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'blog-angular-tailwind';
