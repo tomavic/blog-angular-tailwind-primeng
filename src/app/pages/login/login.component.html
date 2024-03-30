@@ -1,0 +1,51 @@
+<section class="max-w-screen-lg px-3 py-6 mx-auto">
+  <div class="flex flex-col">
+    <div>
+      <h1 class="text-2xl font-bold text-gray-900">Login</h1>
+    </div>
+    <form
+      class="flex flex-col gap-y-5"
+      (ngSubmit)="submit()"
+      [formGroup]="LoginForm">
+      <!-- Checkbox Input -->
+      <div class="flex justify-center">
+        <p-toggleButton
+          formControlName="checked"
+          onLabel="Yes"
+          offLabel="No"></p-toggleButton>
+      </div>
+
+      <!-- Input field (Always required) -->
+      <div class="flex justify-center">
+        <p-floatLabel>
+          <input
+            type="text"
+            pInputText
+            id="username"
+            formControlName="name" />
+          <label for="username">Username</label>
+        </p-floatLabel>
+      </div>
+
+      <!-- Text Area field (Required when checkbox is true) -->
+      <div class="flex justify-center">
+        <p-floatLabel>
+          <textarea
+            rows="5"
+            cols="30"
+            id="bio"
+            pInputTextarea
+            formControlName="bio"></textarea>
+          <label for="bio">Bio</label>
+        </p-floatLabel>
+      </div>
+
+      <div class="flex justify-center">
+        <p-button
+          label="Send"
+          [disabled]="!LoginForm.valid"
+          type="submit"></p-button>
+      </div>
+    </form>
+  </div>
+</section>

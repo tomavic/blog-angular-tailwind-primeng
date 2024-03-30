@@ -1,4 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@charset "UTF-8";
+@layer tw-base, primeng-custom, primeng, tw-components, tw-utilities;
+
+@import 'tailwindcss/base.css' layer(tw-base);
+@import 'tailwindcss/components.css' layer(tw-components);
+@import 'tailwindcss/utilities.css' layer(tw-utilities);
+
+@import 'primeng/resources/primeng.min.css';
+@import 'primeng/resources/themes/tailwind-light/theme.css';
+@import 'primeicons/primeicons.css';
