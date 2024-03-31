@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @layer tw-base, primeng-custom, primeng, tw-components, tw-utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300,700&display=swap');
 @import 'tailwindcss/base.css' layer(tw-base);
 @import 'tailwindcss/components.css' layer(tw-components);
 @import 'tailwindcss/utilities.css' layer(tw-utilities);
@@ -8,3 +9,7 @@
 @import 'primeng/resources/primeng.min.css';
 @import 'primeng/resources/themes/tailwind-light/theme.css';
 @import 'primeicons/primeicons.css';
+
+html {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
