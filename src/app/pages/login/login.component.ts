@@ -18,8 +18,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     InputTextareaModule,
     InputTextModule
   ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
   LoginForm = new FormGroup({

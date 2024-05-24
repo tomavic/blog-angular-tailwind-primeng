@@ -5,7 +5,6 @@ import { PostsComponent } from '../../layout/posts/posts.component';
   selector: 'app-posts-page',
   standalone: true,
   imports: [PostsComponent],
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.scss'
+  templateUrl: './posts.component.html'
 })
 export class PostsPageComponent {}
